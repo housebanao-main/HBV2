@@ -1,0 +1,30 @@
+# .gitignore
+
+# Node modules
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Ignore large files
+client/node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node
+
+# Misc
+*.swp
+
+# Ignore large files
+client/node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node
