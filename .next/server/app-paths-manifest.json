@@ -1,17 +1,17 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/contactus/page": "app/contactus/page.js",
-  "/floorplans/page": "app/floorplans/page.js",
   "/howitwork/page": "app/howitwork/page.js",
+  "/contactus/page": "app/contactus/page.js",
+  "/blog/page": "app/blog/page.js",
   "/ourprojects/page": "app/ourprojects/page.js",
-  "/page": "app/page.js",
   "/pack/page": "app/pack/page.js",
   "/service/page": "app/service/page.js",
-  "/blog/blogging/Blog5/page": "app/blog/blogging/Blog5/page.js",
+  "/page": "app/page.js",
+  "/floorplans/page": "app/floorplans/page.js",
+  "/blog/blogging/Blog3/page": "app/blog/blogging/Blog3/page.js",
   "/blog/blogging/Blog1/page": "app/blog/blogging/Blog1/page.js",
-  "/blog/blogging/Blog2/page": "app/blog/blogging/Blog2/page.js",
   "/blog/blogging/Blog4/page": "app/blog/blogging/Blog4/page.js",
   "/blog/blogging/Blog6/page": "app/blog/blogging/Blog6/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/blog/blogging/Blog3/page": "app/blog/blogging/Blog3/page.js"
+  "/blog/blogging/Blog2/page": "app/blog/blogging/Blog2/page.js",
+  "/blog/blogging/Blog5/page": "app/blog/blogging/Blog5/page.js"
 }

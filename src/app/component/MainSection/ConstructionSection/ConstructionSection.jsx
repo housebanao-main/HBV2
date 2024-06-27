@@ -4,16 +4,16 @@ import { CommonHeading } from "../../Heading/CommonHeading";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-// import constructionimage01 from "../../../../../public/assets/images/ConstructionImage01.png";
-// import constructionimage02 from "../../../../../public/assets/images/ConstructionImage02.png";
-// import constructionimage03 from "../../../../../public/assets/images/ConstructionImage03.png";
-// import constructionimage04 from "../../../../../public/assets/images/ConstructionImage04.png";
+import constructionimage01 from "../../../../../public/assets/images/ConstructionImage01.png";
+import constructionimage02 from "../../../../../public/assets/images/ConstructionImage02.png";
+import constructionimage03 from "../../../../../public/assets/images/ConstructionImage03.png";
+import constructionimage04 from "../../../../../public/assets/images/ConstructionImage04.png";
 import { CommonSlider } from "../../Utils/CommonSlider/CommonSlider";
 
-import constructionimage01 from "@/public/assets/images/ConstructionImage01.png";
-import constructionimage02 from "@/public/assets/images/ConstructionImage02.png";
-import constructionimage03 from "@/public/assets/images/ConstructionImage03.png";
-import constructionimage04 from "@/public/assets/images/ConstructionImage04.png";
+// import constructionimage01 from "@/public/assets/images/ConstructionImage01.png";
+// import constructionimage02 from "@/public/assets/images/ConstructionImage02.png";
+// import constructionimage03 from "@/public/assets/images/ConstructionImage03.png";
+// import constructionimage04 from "@/public/assets/images/ConstructionImage04.png";
 
 export const ConstructionSection = () => {
   const data = [
