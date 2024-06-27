@@ -2,9 +2,9 @@
 import React from "react";
 import { CommonHeading } from "../../Heading/CommonHeading";
 import Image from "next/image";
-import constructionimage01 from "../../../../../public/assets/images/ConstructionImage01.png";
-import constructionimage02 from "../../../../../public/assets/images/ConstructionImage02.png";
-import constructionimage03 from "../../../../../public/assets/images/ConstructionImage03.png";
+import constructionimage01 from "../../../../../public/assets/images/Constructionimage01.png";
+import constructionimage02 from "../../../../../public/assets/images/Constructionimage02.png";
+import constructionimage03 from "../../../../../public/assets/images/Constructionimage03.png";
 
 export const OfferTwo = () => {
   const data = [
