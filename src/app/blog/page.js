@@ -9,8 +9,6 @@ const howitwork = () => {
         <div className='bg-white'>
             <House />
             <BlogPart />
-            
-            
         </div>
     );
 }

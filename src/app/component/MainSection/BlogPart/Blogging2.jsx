@@ -1,12 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
-import interior01 from '../../../../../../public/assets/images/interior01.png';
-import interior02 from '../../../../../../public/assets/images/interior02.png';
-import interior03 from '../../../../../../public/assets/images/interior03.png';
-import interior04 from '../../../../../../public/assets/images/interior04.png';
-import interior05 from '../../../../../../public/assets/images/interior05.png';
-import interior06 from '../../../../../../public/assets/images/interior06.png';
+// import interior01 from '../../../../../../public/assets/images/interior01.png';
+// import interior02 from '../../../../../../public/assets/images/interior02.png';
+// import interior03 from '../../../../../../public/assets/images/interior03.png';
+// import interior04 from '../../../../../../public/assets/images/interior04.png';
+// import interior05 from '../../../../../../public/assets/images/interior05.png';
+// import interior06 from '../../../../../../public/assets/images/interior06.png';
 
+
+import interior01 from '@/public/assets/images/interior01.png';
+import interior02 from '@/public/assets/images/interior02.png';
+import interior03 from '@/public/assets/images/interior03.png';
+import interior04 from '@/public/assets/images/interior04.png';
+import interior05 from '@/public/assets/images/interior05.png';
+import interior06 from '@/public/assets/images/interior06.png';
 const Gallery = () => {
   return (
     <div className='w-full h-auto grid grid-rows-2 gap-[20px] my-[28px] lg:px-0 px-[20px]'>

@@ -42,7 +42,8 @@ const blogs = [
 ];
 
 const BlogB = ({ imageSrc, date, title, slug }) => (
-  <Link href={`/blogging/${slug}`}>
+  
+  <Link href={`/blog/blogging/${slug}`}>
     <div className="flex flex-col mb-6 w-full ml-2 cursor-pointer">
       <Image
         src={imageSrc}
@@ -63,6 +64,7 @@ const BlogPart = () => (
   <div className="relative bg-white p-6 ml-2 mr-2 mt-8">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
       {blogs.slice(0, 3).map((blog, index) => (
+        
         <BlogB key={index} {...blog} />
       ))}
     </div>
