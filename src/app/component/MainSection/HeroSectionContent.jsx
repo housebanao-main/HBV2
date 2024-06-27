@@ -5,8 +5,8 @@ import { HeroSectionButton } from '../Button/HeroSectionButton'
 import { useDispatch } from 'react-redux'
 import { SCREENS } from '../Utils/CustomModal/Modal'
 import { toggleModal } from '../../store/slice/slice'
-import { BookForm } from '../MainSection/BookingPopUP/BookForm' // Corrected import
-
+// import { BookForm } from '../MainSection/BookingPopUP/BookForm' // Corrected import
+import { BookForm } from './BookingPopUp/BookForm'
 export const HeroSectionContent = () => {
   const dispatch = useDispatch();
 
