@@ -34,10 +34,10 @@ export const HeroSection = ( {bannerimage, altText} ) => {
       <span onClick={openLink.bind('tel:+91 9810431883')} className={` ${style} top-[180px] `}>  <Image src={phoneNoicon} alt='contact' className=' w-[21px] '/></span>
         */}
 
-<a href="https://api.whatsapp.com/send?phone=15551234567" target="_blank" rel="noopener noreferrer" className={`${style} top-[118px]`}>
+<a href="https://api.whatsapp.com/send?phone=9810232124" target="_blank" rel="noopener noreferrer" className={`${style} top-[118px]`}>
   <Image src={whatsappicon} alt='whatsapp' className='w-[30px]' />
 </a>
-<a href="tel:+919810431883" className={`${style} top-[180px]`}>
+<a href="tel:+9810117643" className={`${style} top-[180px]`}>
   <Image src={phoneNoicon} alt='contact' className='w-[21px]' />
 </a>
 
