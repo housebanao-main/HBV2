@@ -15,8 +15,8 @@ export const Accordion = ({ data }) => {
   return (
     <section className='my-[30px] w-full lg:max-w-[1290px] mx-auto h-auto flex flex-col'>
         {data.map((item, index) => (
-          <div className='mb-[20px] rounded-md' key={index}>
-            <div onClick={() => handleClick(index)} className={`bg-white flex justify-between cursor-pointer items-center border-[0.5px] rounded-full ${!openStates[index] && 'shadow-md'} border-[#e0dede] px-[20px] py-[12px] text-[16px] text-black font-medium `}> 
+          <div className='mb-[20px] rounded-lg' key={index}>
+            <div onClick={() => handleClick(index)} className={`bg-white flex justify-between cursor-pointer items-center border-[0.5px] rounded-lg ${!openStates[index] && 'shadow-md'} border-[#e0dede] px-[20px] py-[12px] text-[16px] text-black font-medium `}> 
                <p>{item.question}</p>
                <span className='w-[23px] h-[23px] p-[6px] bg-white shadow-sm border border-[#e0dede] flex items-center text-[10px] rounded-full'>
                  <FontAwesomeIcon icon={openStates[index] ? faChevronUp : faChevronDown} className=''/>
