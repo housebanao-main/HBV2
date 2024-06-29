@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { CommonHeading } from "../../Heading/CommonHeading";
 import { SubHeading } from "../../SubHeading/SubHeading";
@@ -6,9 +7,9 @@ import { faArrowRight, faAngleDown, faPlus } from "@fortawesome/free-solid-svg-i
 
 export const Packages = () => {
   const packages = [
-    { id: 1, title: "Construction - $990/sq.ft (incl. GST)" },
-    { id: 2, title: "Construction + interior - $1700/sq.ft " },
-    { id: 3, title: "Interior - $2,330/sq.ft" },
+    { id: 1, title: "Construction starts from ₹990/sq.ft" },
+    { id: 2, title: "Construction + interior starts from ₹1499/sq.ft" },
+    { id: 3, title: "Interior starts from ₹1100/sq.ft" },
   ];
 
   const options = [
@@ -31,7 +32,7 @@ export const Packages = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center mt-8 font-poppins">
+    <section className="flex flex-col items-center mt-8 font-poppins px-4">
       <CommonHeading className="text-[25px] font-extrabold mt-[5px]">
         Packages
       </CommonHeading>
@@ -42,10 +43,10 @@ export const Packages = () => {
         {packages.map((pkg, index) => (
           <div
             key={pkg.id}
-            className="border-2 border-brown rounded-md h-[650px] w-[400px] flex flex-col items-center justify-between"
+            className="border-2 border-brown rounded-md h-auto flex flex-col items-center justify-between w-full md:w-[400px]"
           >
             <div className="bg-brown rounded-t-md w-full p-5">
-              <h1 className="text-white text-[18px]">{pkg.title}</h1>
+              <h1 className="text-white text-[15px]">{pkg.title}</h1>
             </div>
             <div className="bg-white w-full p-5 flex flex-col items-start flex-grow text-[#575757]">
               {index === 0 && (
@@ -69,13 +70,11 @@ export const Packages = () => {
                 </ul>
               )}
             </div>
-            <div>
-              <div className="bg-white w-full p-5 flex-grow flex flex-col items-center justify-center text-[#575757]">
-                <p className="text-center  mb-auto">
-                  Get in touch with us
-                  <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-xs text-[#575757]" />
-                </p>
-              </div>
+            <div className="w-full flex flex-col items-center justify-center text-[#575757]">
+              <p className="text-center mb-auto p-5">
+                View More
+                <FontAwesomeIcon icon={faArrowRight} className="ml-2 text-xs text-[#575757]" />
+              </p>
               <button className="hidden lg:flex w-fit h-[40px] rounded-[88px] border-[0.5px] p-[14px] justify-between items-center bg-brown mb-4">
                 <span className="font-medium text-regular bg-brown text-white">
                   Book Consultation now
@@ -85,6 +84,7 @@ export const Packages = () => {
           </div>
         ))}
       </div>
+      <div className="w-full h-[20px] bg-white"></div> 
     </section>
   );
 };
