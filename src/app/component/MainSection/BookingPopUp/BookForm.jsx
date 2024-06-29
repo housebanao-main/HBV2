@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { closeModal } from "../../../store/slice/slice";
@@ -35,22 +36,18 @@ export const BookForm = () => {
     e.preventDefault();
     setSuccessMessage("");
     setErrorMessage("");
-
-    // Log the formData to check if it's correctly capturing the input values
     console.log("Form Data:", formData);
 
-    // Basic client-side validation
     if (!formData.name || !formData.phoneNo || !formData.location) {
-      // Log the missing required fields
       console.log("Missing required fields:", formData);
 
-      // Set error message if required fields are missing
       setErrorMessage("Please fill in all required fields.");
       return;
     }
 
     try {
-      // Your fetch request and submission logic here...
+      // Simulate form submission
+      setSuccessMessage("Form submitted successfully!");
     } catch (error) {
       console.error("Error booking appointment:", error);
       setErrorMessage(error.message);
@@ -58,13 +55,13 @@ export const BookForm = () => {
   };
 
   return (
-    <section className="relative lg:w-[450px] w-full h-auto bg-white lg:rounded-[20px] rounded-none flex flex-col shadow-md mt-[70px] m-[10px] p-[20px] border-[0.5px] z-10">
+    <section className="relative lg:w-[450px] w-full h-auto bg-white lg:rounded-[20px] rounded-none flex flex-col shadow-md mt-[20px] lg:mt-0 m-[10px] p-[20px] border-[0.5px] z-10">
       <div className="flex flex-col items-center mt-[8px]">
-        <Image src={logo} alt="Company Logo" width={100} height={100} />
+        <Image src={logo} alt="Company Logo" width={140} height={140} />
         <CommonHeading className={"text-[25px] font-extrabold"}>
           Book your appointment
         </CommonHeading>
-        <SubHeading className={"text-center mt-[7px]"}>
+        <SubHeading className={"text-center text-[#6C757D] mt-[10px]"}>
           Get free consultation
         </SubHeading>
 
@@ -75,7 +72,7 @@ export const BookForm = () => {
           <div className="text-red-500 text-center mb-4">{errorMessage}</div>
         )}
 
-        <form className="flex flex-col items-center gap-[10px] mt-[18px]" onSubmit={handleSubmit}>
+        <form className="flex flex-col items-center gap-[10px] mt-[58px]" onSubmit={handleSubmit}>
           <CustomField
             labelTitle="name"
             FieldType="text"
@@ -100,7 +97,6 @@ export const BookForm = () => {
             value={formData.location}
             onChange={handleChange}
           />
-         
           <CustomField
             labelTitle="area"
             FieldType="number"
@@ -109,7 +105,6 @@ export const BookForm = () => {
             value={formData.area}
             onChange={handleChange}
           />
-         
           <CustomField
             labelTitle="services"
             FieldType="text"
