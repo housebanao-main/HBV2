@@ -18,8 +18,8 @@ export const Header = () => {
     { name: "Packages", link: "/pack" },
     { name: "How It Works", link: "/howitwork" },
     { name: "Floor Plans", link: "/floorplans" },
-    { name: "Blog", link: "/blog" } ,
-    { name: "Contact Us", link: "/contactus" } 
+    { name: "Blog", link: "/blog" },
+    { name: "Contact Us", link: "/contactus", className: "ml-36" } 
   ];
 
   const showMenu = () => setActive(!active);
@@ -49,12 +49,15 @@ export const Header = () => {
               />
             </Link>
             <div className="lg:flex gap-[25px] hidden">
-              <nav className="lg:flex gap-[25px] text-regular font-semibold">
-                {menus.map((menu, index) => (
+              <nav className="lg:flex gap-[25px] text-regular ">
+                {menus.slice(0, -1).map((menu, index) => (
                   <Link key={index} href={menu.link}>
                     {menu.name}
                   </Link>
                 ))}
+                <Link href={menus[menus.length - 1].link} className={menus[menus.length - 1].className}>
+                  {menus[menus.length - 1].name}
+                </Link>
               </nav>
             </div>
           </div>
@@ -75,16 +78,15 @@ export const Header = () => {
 
             <ul className="py-[80px] px-[30px] font-medium flex flex-col gap-[30px] text-[20px] absolute top-[30px]">
               {menus.map((menu, index) => (
-                <Link key={index} href={menu.link} onClick={showMenu}>
+                <Link key={index} href={menu.link} onClick={showMenu} className={menu.className}>
                   {menu.name}
                 </Link>
               ))}
             </ul>
           </div>
 
-          
-          <button className="hidden lg:flex w-fit h-[40px] rounded-[88px] border-[0.5px] p-[14px] justify-between items-center bg-brown mb-0">
-            <span className="font-medium text-regular bg-brown text-white">
+          <button className="hidden lg:flex w-fit h-[40px] rounded-[88px] mr-16 border-[0.5px] p-[14px] justify-between items-center bg-brown mb-0">
+            <span className="font-medium text-regular bg-brown text-white ">
               Book Consultation now
             </span>
           </button>
