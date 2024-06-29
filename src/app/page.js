@@ -19,19 +19,18 @@ export default function Home() {
        <InteriorSection  />
        <Services />
        
-
-       <GlimpseSection />
-       
        <div id="packages">
          <Packages />
        </div>
-     
+       <GlimpseSection />
+       
+       
        <TableSection />
 
        <div id="ourprojects">
          <Projects />
        </div>
-      <CustomerReviews />
+     
        <Faqs />
        <CollabsSection />
     </main>
