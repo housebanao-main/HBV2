@@ -14,17 +14,17 @@ export const Projects = () => {
     {
       image: House1,
       HNO: "CNR11011",
-      address: "62, 2nd Cross, Gurgaon, Delhi",
+      address: "C-2/113 , west enclave  , Pitampura-110034",
     },
     {
       image: House2,
       HNO: "CNR11012",
-      address: "63, 3rd Cross, Gurgaon, Delhi",
+      address: "D-16/117-118 , sector -3 Rohini -110085",
     },
     {
       image: House3,
       HNO: "CNR11013",
-      address: "64, 4th Cross, Gurgaon, Delhi",
+      address: "H-32/88 , sector -3 Rohini -110085",
     },
   ];
 
@@ -69,7 +69,7 @@ export const Projects = () => {
                       className="mb-1 filter invert group-hover:invert-0 transition duration-300 ease-in-out"
                     />
                     <p className="text-black text-[10px] group-hover:text-white transition duration-300 ease-in-out">
-                      3964 sq.ft.
+                      150 sq yards
                     </p>
                     <p className="text-black text-[10px] group-hover:text-white transition duration-300 ease-in-out">
                       Area
@@ -84,7 +84,7 @@ export const Projects = () => {
                       className="mb-1 filter invert group-hover:invert-0 transition duration-300 ease-in-out"
                     />
                     <p className="text-black text-[10px] group-hover:text-white transition duration-300 ease-in-out">
-                      G + 3
+                      G + 1
                     </p>
                     <p className="text-black text-[10px] group-hover:text-white transition duration-300 ease-in-out">
                       Floors
