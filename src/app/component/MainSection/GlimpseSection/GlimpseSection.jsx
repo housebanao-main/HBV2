@@ -14,7 +14,7 @@ export const GlimpseSection = () => {
 
   return (
     <section className='flex flex-col gap-[20px] lg:max-w-[1290px] w-full mx-auto mb-[30px]'>
-      <CommonHeading className={"lg:text-start text-center"}>Get a glimpse of Housebanao homes</CommonHeading>
+      <CommonHeading className={"lg:text-start mb-6 text-center mt-8"}>Get a glimpse of Housebanao homes</CommonHeading>
       <div className='flex items-center justify-between lg:flex-row flex-col gap-[26px] lg:gap-0 lg:px-0 px-[20px]'>
         {data.map((item, index) => (
           <div className='relative flex items-center flex-col shadow-xl onhoverCards rounded-[10px] border border-#575757 w-[400px] h-[400px] overflow-hidden' key={index}>
