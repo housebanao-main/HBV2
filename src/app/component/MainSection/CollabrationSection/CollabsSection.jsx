@@ -3,10 +3,10 @@ import React from "react";
 import { CommonHeading } from "../../Heading/CommonHeading";
 import { SubHeading } from "../../SubHeading/SubHeading";
 import Image from "next/image";
-import asianpainticon from "../../../../../public/assets/images/asianpaints.png";
+import asianpainticon from "../../../../../public/assets/images/asianpaintss.png";
 import boschicon from "../../../../../public/assets/images/bosch.png";
 import siemensicon from "../../../../../public/assets/images/siemens.png";
-import hettichicon from "../../../../../public/assets/images/hettich.png";
+import hettichicon from "../../../../../public/assets/images/hettichh.png";
 import dorseticon from "../../../../../public/assets/images/dorset.png";
 import dewaicon from "../../../../../public/assets/images/dewa.png";
 
