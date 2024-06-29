@@ -3,37 +3,22 @@ import React from "react";
 import { CommonHeading } from "../../Heading/CommonHeading";
 import { Cards } from "../../Utils/Cards/Cards";
 import {
-  faCalendarDays,
   faCircleCheck,
   faCreditCard,
   faEyeSlash,
 } from "@fortawesome/free-regular-svg-icons";
-import {
-  faPeopleGroup,
-} from "@fortawesome/free-solid-svg-icons";
-import { CommonSlider } from "../../Utils/CommonSlider/CommonSlider";
 
 export const Services = () => {
   const cardsContent = [
     {
-      icon: faCalendarDays,
-      title: "Deliver in 45 days",
-      backgroundColor: "#ECDAF2",
-    },
-    {
-      icon: faPeopleGroup,
-      title: "500+ happy customer",
-      backgroundColor: "#FFEDDE",
+      icon: faCircleCheck,
+      title: "10 years warranty",
+      backgroundColor: "#C5FDBB",
     },
     {
       icon: faCreditCard,
       title: "Easy EMI options",
       backgroundColor: "#D9FCF6",
-    },
-    {
-      icon: faCircleCheck,
-      title: "Regular quality checks",
-      backgroundColor: "#FFF7AE",
     },
     {
       icon: faEyeSlash,
@@ -42,18 +27,19 @@ export const Services = () => {
     },
     {
       icon: faCircleCheck,
-      title: "10 years warranty",
-      backgroundColor: "#C5FDBB",
+      title: "Regular quality checks",
+      backgroundColor: "#FFF7AE",
     },
   ];
+
   return (
     <>
       <section
-        className="bg-[#F7F7F7] lg:h-[380px] h-auto mb-[30px] mt-[25px] w-full flex justify-center items-center  pt-[20px] pb-[40px] flex-col"
+        className="bg-white lg:h-[380px] h-auto mb-[30px] mt-[25px] w-full flex justify-center items-center pt-[20px] pb-[40px] flex-col px-4"
       >
-        <CommonHeading className={"mt-[10px]"}>Why choose us?</CommonHeading>
-        <div className="relative lg:max-w-[1290px] w-full mx-auto">
-          <CommonSlider slidesShow={4} className="py-6 lg:mx-auto">
+        <CommonHeading className="mt-[10px]">Why choose us?</CommonHeading>
+        <div className="relative w-full mx-auto mt-[25px] flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 py-6 mx-6 lg:mx-24">
             {cardsContent.map((card, index) => (
               <Cards
                 key={index}
@@ -62,7 +48,7 @@ export const Services = () => {
                 bgColor={card.backgroundColor}
               />
             ))}
-          </CommonSlider>
+          </div>
         </div>
       </section>
     </>
